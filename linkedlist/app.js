@@ -5,6 +5,10 @@ const { log } = console;
 
 class LinkedList {
 
+    constructor() {
+        this.head = null;
+        this.size = 0;
+    }
 }
 
 class Node {
@@ -12,7 +16,7 @@ class Node {
     prev = null;
     constructor(data) {
         this.data = data;
-        // this.next = null;
+        this.next = null;
     }
 
     countNodes(head) {
